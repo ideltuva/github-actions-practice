@@ -14,6 +14,6 @@ jobs:
         run: npm run test
       - name: Build an app
         run: npm run build
-      - name: Build an app
+      - name: Status
         run: echo 'Successfully finished!'
 
