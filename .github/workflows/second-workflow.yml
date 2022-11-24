@@ -1,9 +1,10 @@
 name: Second Workflow
-on: issues
-  type: opened
+on: 
+  issues:
+    type: opened
 jobs:
   issue-notifier:
     runs-on: ubuntu-latest
     steps:
       name: Notification message
-      runs: echo 'Issue opened: ${{ github.event.issue }}'
+      runs: echo 'Issue opened: ${{ toJSON(github.event.issue) }}'
