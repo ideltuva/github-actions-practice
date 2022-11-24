@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Notification message
-        runs: echo 'Issue opened ${{ toJSON(github.event.issue) }}'
+        run: echo 'Issue opened ${{ toJSON(github.event.issue) }}'
